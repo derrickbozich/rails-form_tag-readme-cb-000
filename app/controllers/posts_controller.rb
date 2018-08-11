@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(name: params[:name], description: params[:description])
+    @post = Post.new(title: params[:post][:title], description: params[:post][:description])
   end
 
 end
